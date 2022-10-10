@@ -576,7 +576,7 @@ footer
 }
 
 .about-me-body {
-    background-image: "pictures/myportrait.jpg";
+    background-image: url("pictures/myportrait.jpg");
 }
 
 @media screen and (max-width: 40rem) {
@@ -589,13 +589,14 @@ footer
       }
 
       .about-me-body {
+        background-image: none;
         background-color: black;
     }
 
       .contactspace
         {
-            width: 40%;
-            margin-left: 20%;
+            margin-left: 0;
+            margin-right: 0;
         }
 }
 
