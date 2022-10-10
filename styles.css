@@ -1,25 +1,3 @@
-@media all and (max-width: 40rem) {
-    .sm-container{
-        left: 19%;
-      }
-    
-    .sm-menu::before{
-        left: 20%;
-      }
-
-    .about-me-body{
-        background-image: url("pictures/black.jpg");
-      }
-
-    .contactspace{
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left;
-        border-radius: 0;
-        padding: 1.25rem;
-      }
-}
-
 body
 {
     padding: 0;
