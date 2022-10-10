@@ -575,6 +575,10 @@ footer
   transform: translateX(-50%) rotate(45deg);
 }
 
+.about-me-body {
+    background-image: "pictures/myportrait.jpg";
+}
+
 @media screen and (max-width: 40rem) {
     .sm-container{
         left: 19%;
@@ -583,6 +587,10 @@ footer
     .sm-menu::before{
         left: 20%;
       }
+
+      .about-me-body {
+        background-color: black;
+    }
 
       .contactspace
         {
