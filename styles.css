@@ -149,19 +149,15 @@ h3
     white-space: nowrap;
 }
 
-#about-body
-{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
-
 .h5-about
 {
     font-family: "Courier New";
-    margin-left: 40.5%;
+    margin-left: 5%;
     color: white;
-    padding-bottom: 2px;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    overflow: hidden;
+    margin-right: 8%;
 }
 
 .back-home
@@ -576,7 +572,7 @@ footer
 }
 
 .about-me-body {
-    background-image: url("pictures/myportrait.jpg");
+    background: black;
 }
 
 .footer
@@ -586,4 +582,50 @@ footer
     font-weight: 100;
     margin-right: 12%;
     margin-top: 0.125rem;
+}
+
+.about-title {
+    font-size: 3rem;
+    color: beige;
+    font-weight: 300;
+    margin-left: 12%;
+    margin-bottom: 2rem;
+}
+
+.alert {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 200;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 75rem) {
+    .about-me-body {
+        background-image: url("pictures/myportrait.jpg");
+    }
+
+    .about-title {
+        font-size: 5rem;
+        margin-left: 25%;
+        font-weight: 330;
+    }
+
+    .h5-about
+    {
+        font-family: "Courier New";
+        margin-left: 36%;
+        margin-right: 20%;
+        color: white;
+        padding-bottom: 0.2rem;
+        font-size: 1rem;
+    }
+
+    #about-body
+    {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
 }

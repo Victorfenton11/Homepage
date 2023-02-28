@@ -2,11 +2,13 @@
 
 <html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>
             My Homepage
         </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles2.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="icon" href="pictures/Website-Icon.png">
@@ -17,21 +19,30 @@
 
         <div class="blank"></div>
 
-        <div>
-            <nav class="navbar navbar-light bg-light" id="nav-left">
-                <a class="navbar-brand" href="index.html" style="color: navy">Home</a>
-                <a class="navbar-brand" href="AboutMe.html">About Me</a>
-                <a class="navbar-brand" href="Code.html">Code & Projects</a>
+        <label for="check" class="show-menu" onclick="">
+          <input type="checkbox" id="check"/> 
+          <span class="menu-span"></span>
+          <span class="menu-span"></span>
+          <span class="menu-span"></span>
+        </label>
+
+        <div class="menu">
+          <div class="content">
+            <nav class="nav">
+              <ul class="nav_list">
+                <div class="nav_list_item"><li><a href="AboutMe.html">About Me</a></li></div>
+                <div class="nav_list_item"><li><a href="Code.html">Code & Projects</a></li></div>
+                <div class="nav_list_item"><li><a href="Gallery.html">Gallery</a></li></div>
+                <div class="nav_list_item"><li><a href="CommonApp.html">College App</a></li></div>
+                <div class="nav_list_item"><li><a href="Contact.html">Contact</a></li></div>
+              </ul>
             </nav>
-            <nav class="navbar navbar-light bg-light" id="nav-right">
-                <a class="navbar-brand" href="Gallery.html">Gallery</a>
-                <a class="navbar-brand" href="CommonApp.html">College App</a>
-                <a class="navbar-brand" href="Contact.html">Contact</a>
-            </nav>
-            <a id="title" href="index.html">Victor Fenton Aguilar</a>
+          </div>
         </div>
 
-        <h4 class="alert">⚠️ Note: This site is under maintenance. An upgraded site with new design is coming soon! ⚠️</h4>
+        <a id="title" href="index.html">Victor Fenton Aguilar</a>
+
+        <div class="blank"></div>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -65,12 +76,13 @@
         <div style="height: 460px">
             <div id="left">
                 <h2 style="text-align: center">My Spotify Playlist</h2>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2W7pS3GrsCnt3K2htgL8ha?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0cC0K3bW3eurTnjQNLctw3?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
               </div>
 
             <div id="right">
                 <h2 style="text-align: center">Song of the Week</h2>
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2TZ9kaTiLewawHZK7yylSC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>              </div>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7BaZ7WlAdhOaGjIUYWsUWy?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              </div>
         </div>
 
         <div class="blank"></div>
@@ -95,7 +107,7 @@
         <div class="blank"></div>
         <div class="smallblank"></div>
         <div class="blank"></div>
-        <div class="footer">Made by Victor Fenton Aguilar | 2019</div>
+        <div class="footer">Made by Victor Fenton Aguilar</div>
         <div class="smallblank"></div>
 
         <div class="sm-container">
@@ -115,6 +127,13 @@
         <script>
           $(".show-btn").click(function(){
             $(".sm-menu").toggle();
+          });
+
+          $(".show-menu").click(function() {
+            const menu = document.querySelector(".menu");
+            const mspan = document.querySelector(".menu-span");
+            console.log(menu.style.opacity)
+            menu.style.opacity = menu.style.opacity === "1" ? 0 : 1;
           });
         </script>
         <script src="Scripts/First.js"></script>
