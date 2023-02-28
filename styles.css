@@ -596,7 +596,7 @@ footer
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 200;
     overflow: hidden;
 }
@@ -627,5 +627,9 @@ footer
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
+    }
+
+    .alert {
+        font-size: 4rem;
     }
 }
